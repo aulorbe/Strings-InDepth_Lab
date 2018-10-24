@@ -1,7 +1,6 @@
 def say_hello(name):
-    # takes in a name and returns the string "Hi my name is " plus the name
-    # use whichever form of interpolation is most appropriate
-    pass
+    def say_hello(name):
+    print(f"Hi my name is {name}")
 
 def replace_given_substring(str_to_replace, str_to_insert, string):
     # this function takes three parameters --

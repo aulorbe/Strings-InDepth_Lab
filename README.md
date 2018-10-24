@@ -94,3 +94,4 @@ Open up the string_functions.py file and follow along with the comments which de
 ## Summary
 
 In this lab we introduced the basics of how strings work and what methods we have available to us when we are working with strings in Python. Then we put those skills to the test by defining functions that used some of these methods to alter and format strings for our own uses. This is a common need of any good programmer to make sure that their application only accepts information in a uniform format, as well as guard against information coming into the program that might be malicious.
+# Strings-InDepth_Lab

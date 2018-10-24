@@ -7,17 +7,20 @@ def replace_given_substring(str_to_replace, str_to_insert, string):
     return string.replace(str_to_replace,str_to_insert)
 
 def remove_duplicate_punctuation(string):
-    # should remove all duplicate punctuation marks in a given string
-    # i.e. "Hi!!!!!!" should be reformatted to "Hi!"
-    # i.e. "Hello..... My name is Terrance!! How are you???" -> "Hello. My name is Terrance! How are you?"
-    pass
+    spec_chars = list(set(re.findall('[^A-Z^a-z\s]', s)))
+    for spec in spec_chars:
+        s = re.sub('[' + spec + ']+', spec, s)
+    return s
 
 
 def validate_email_format(email):
-    # should make sure there are no special characters (i.e. *,~,#,$,%,&,(,),`,",',:,;,/,>,<)
-    # make sure the email contains an @ symbol and a .com
-    # return True if format passes tests, return False otherwise
-    pass
+    def validate_email_format(email):
+    regex = '\w+\@\w+.com'
+    output = re.match(regex,email)
+    if output:
+        return True
+    else:
+        return False
 
 
 def anonymize_credit_card_number(credit_card_number):

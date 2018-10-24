@@ -3,12 +3,8 @@ def say_hello(name):
     print(f"Hi my name is {name}")
 
 def replace_given_substring(str_to_replace, str_to_insert, string):
-    # this function takes three parameters --
-    # the first is the substring we would like to replace.
-    # the second substring is what we would like to use inplace of the first
-    # the third is the actual string which we want to operate on
-    # the function should return the new string
-    pass
+    def replace_given_substring(str_to_replace, str_to_insert, string):
+    return string.replace(str_to_replace,str_to_insert)
 
 def remove_duplicate_punctuation(string):
     # should remove all duplicate punctuation marks in a given string
